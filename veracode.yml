@@ -21,7 +21,7 @@ veracode_static_scan:
   # By selecting a branch here - Veracode will save your last scan result
   # As an App Profile - given the current name of your scanned repo
   # Use 'none' if you would not like any scans saved to the platform
-  analysis_branch: ENTER_BRANCH_NAME_HERE
+  analysis_branch: main
   analysis_on_platform: true
   #If break_build_invalid_policy is set to true, the build will break when the policy name is invalid.
   break_build_invalid_policy: true
@@ -44,7 +44,7 @@ veracode_static_scan:
   issues:
     trigger: true
     commands:
-      - "ENTER_COMMAND_TO_EXECUTE_SCAN"
+      - "trigger"
 
 veracode_sca_scan:   
   # Please only specify trigger:true for either push event or 
